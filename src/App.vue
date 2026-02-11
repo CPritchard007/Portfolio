@@ -12,10 +12,10 @@ const items = [
   { title: 'Home', to: { name: 'home' }, icon: 'mdi-home-outline' },
   { title: 'Projects', to: { name: 'projects' }, icon: 'mdi-briefcase-outline' },
   { title: 'Work Experience', to: { name: 'work-experience' }, icon: 'mdi-account-group-outline' },
-  { title: 'Volunteering', to: { name: 'volunteering' }, icon: 'mdi-account-hard-hat-outline' },
-  { title: 'Resume', to: { name: 'resume' }, icon: 'mdi-file-outline' },
-  { title: 'About', to: { name: 'about' }, icon: 'mdi-account-circle-outline' },
-  { title: 'Contact', to: { name: 'contact' }, icon: 'mdi-email-outline' },
+  // { title: 'Volunteering', to: { name: 'volunteering' }, icon: 'mdi-account-hard-hat-outline' },
+  // { title: 'Resume', to: { name: 'resume' }, icon: 'mdi-file-outline' },
+  // { title: 'About', to: { name: 'about' }, icon: 'mdi-account-circle-outline' },
+  // { title: 'Contact', to: { name: 'contact' }, icon: 'mdi-email-outline' },
 ]
 
 const activeTitle = computed(() => items.find((i) => i.to?.name === route.name)?.title ?? 'Portfolio')
