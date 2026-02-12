@@ -11,7 +11,7 @@
 - Implemented core data visualization components enabling intersection-level speed coloring, dynamic
 filtering, and responsive scaling on Leaflet/Mapbox.
 - Contributed to a platform now used by transportation agencies for faster reporting and analytics, improving workflow efficiency for internal and client-side users.
-- [Learn more about Vantage Argus (formerly SensMetric)](https://www.iteris.com/blog/new-chapter-traffic-management-welcoming-vantageargus-cv)
+- [Learn more about Vantage Argus](https://www.iteris.com/blog/new-chapter-traffic-management-welcoming-vantageargus-cv)
 
 ### Year 1 — Software Developer, Reward & Logo Apps
 - Re-architected core application engine for multiple consumer-facing reward and playtime apps, transitioning from static, hard-coded behavior to a dynamic, server-driven configuration model.

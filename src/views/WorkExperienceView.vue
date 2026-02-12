@@ -6,11 +6,15 @@ import taplaneDescription from '../data/taplane.md?raw'
 import gambitVenturesDescription from '../data/gambit-ventures.md?raw'
 import codeninjaDescription from '../data/codeninja.md?raw'
 import { useRouter } from 'vue-router'
+const taplaneIcon = 'src/assets/company_logos/taplane.jpeg'
+const codeninjaIcon = 'src/assets/company_logos/codeninjas.png'
+
 const router = useRouter()
 
 const timeline = ref([
     {
         id: 1,
+        icon: taplaneIcon,
         title: 'Software & Mobile Developer',
         description: taplaneDescription,
         location: 'Taplane Inc.',
@@ -36,6 +40,13 @@ const timeline = ref([
                     window.open('https://www.taplane.com/', '_blank')
                 },
             },
+            {
+                icon: 'mdi-linkedin',
+                text: 'LinkedIn',
+                onClick: () => {
+                    window.open('https://www.linkedin.com/company/taplane/posts/?feedView=all', '_blank')
+                },
+            }
         ],
     },
     {
@@ -59,11 +70,12 @@ const timeline = ref([
                 onClick: () => {
                     window.open('https://www.gambitventures.ca/', '_blank')
                 },
-            },
+            }
         ],
     },
     {
         id: 3,
+        icon: codeninjaIcon,
         title: 'Coding Sensei - Student Coding Mentor',
         description: codeninjaDescription,
         location: 'Code Ninja',
@@ -83,6 +95,13 @@ const timeline = ref([
                     window.open('https://www.codeninjas.com/', '_blank')
                 },
             },
+            {
+                icon: 'mdi-linkedin',
+                text: 'LinkedIn',
+                onClick: () => {
+                    window.open('https://www.linkedin.com/company/codeninjas/posts/?feedView=all', '_blank')
+                },
+            },
         ],
     },
 ])
@@ -91,9 +110,11 @@ const timeline = ref([
 <template>
     <v-container class="page">
         <v-timeline align="start" side="end">
-            <v-timeline-item v-for="item in timeline" :key="item.id" dot-color="grey" size="80">
-
-
+            <v-timeline-item v-for="item in timeline" :key="item.id" fill-dot="true" dot-color="grey" size="80">
+                <template #icon>
+                    <v-img :src="item.icon" width="100" height="100" class="company-logo" />    
+                </template>
+                
                 <template #opposite>
                     <div class="text-end">
                         <div class="text-h6">{{ item.location }}</div>
@@ -139,5 +160,10 @@ const timeline = ref([
 
 .markdown :deep(h3) {
     margin-top: 1.3rem;
+}
+
+.company-logo {
+    border-radius: 50%;
+    object-fit: cover;
 }
 </style>
