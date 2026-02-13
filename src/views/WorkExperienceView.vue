@@ -106,6 +106,7 @@ const timeline = ref([
 
 <template>
     <v-container class="page">
+        <div class="kicker">Work Experience</div>
         <v-timeline align="start" side="end">
             <v-timeline-item v-for="item in timeline" :key="item.id" fill-dot="true" dot-color="grey" size="80">
                 <template #icon>

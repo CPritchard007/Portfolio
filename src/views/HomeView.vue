@@ -31,13 +31,6 @@ const yearsOfExperience = new Date().getFullYear() - 2021
 </template>
 
 <style lang="scss" scoped>
-.kicker {
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  opacity: 0.7;
-}
-
 .hero-title {
   margin: 10px 0 12px;
   font-size: clamp(2.1rem, 4.5vw, 3.4rem);

@@ -1,5 +1,6 @@
 <script setup>
-const email = 'you@example.com'
+const email = 'cpritchard640@gmail.com'
+
 </script>
 
 <template>
@@ -20,15 +21,6 @@ const email = 'you@example.com'
               LinkedIn
             </v-btn>
           </v-card-actions>
-        </v-card>
-      </v-col>
-
-      <v-col cols="12" md="5">
-        <v-card class="contact-card" rounded="xl" elevation="0">
-          <v-card-title>Availability</v-card-title>
-          <v-card-text class="lead">
-            Add your location, time zone, and what you’re open to (full-time, contract, freelance).
-          </v-card-text>
         </v-card>
       </v-col>
     </v-row>
