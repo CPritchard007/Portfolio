@@ -20,6 +20,8 @@ npm run preview
 
 - **GitHub Actions** is set up in `.github/workflows/deploy.yml`
 - It deploys on every push to the **`main`** branch by publishing the build output to the **`gh-pages`** branch
+- The workflow defaults to `VITE_BASE=/` (works for `cpritchard007.github.io`)
+- If you deploy as a project site (`https://<user>.github.io/<repo>/`), set repo variable `VITE_BASE` to `/<repo>/`
 
 Do this once in GitHub:
 
@@ -29,9 +31,9 @@ Do this once in GitHub:
 
 ### Company logos (build assets)
 
-If you reference images using string paths like `src/assets/company_logos/...`, they won’t be bundled automatically.
+Company logo images are imported in Vue files, so Vite bundles them into `dist/assets/*` automatically.
 
-This repo copies `src/assets/company_logos/` into `dist/src/assets/company_logos/` during deploy (see `scripts/prepare-pages.mjs`).
+`scripts/prepare-pages.mjs` still adds `.nojekyll` for GitHub Pages compatibility.
 
 ### Customize
 

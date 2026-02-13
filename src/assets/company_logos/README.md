@@ -1,9 +1,5 @@
 Put your logo images in this folder (committed to git).
 
-They are copied to `dist/src/assets/company_logos/` during deploy so runtime URLs like:
+Import these images from Vue/JS (for example: `import logo from '../assets/company_logos/taplane.jpeg'`).
 
-- `src/assets/company_logos/taplane.jpeg`
-- `src/assets/company_logos/codeninjas.png`
-
-work on GitHub Pages.
-
+Vite will fingerprint and bundle them into `dist/assets/` automatically so they work on GitHub Pages.

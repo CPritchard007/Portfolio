@@ -31,9 +31,9 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          # Set the correct Vite base path for GitHub Pages:
-          # https://<user>.github.io/<repo>/
-          VITE_BASE: /${{ github.event.repository.name }}/
+          # Use "/" for user/org pages (cpritchard007.github.io),
+          # or set repo variable VITE_BASE for project pages (ex: /Portfolio/).
+          VITE_BASE: ${{ vars.VITE_BASE || '/' }}
 
       - name: Prepare GitHub Pages
         run: node scripts/prepare-pages.mjs
@@ -44,4 +44,3 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
           publish_branch: gh-pages
-

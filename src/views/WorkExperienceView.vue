@@ -5,9 +5,8 @@ import TagChip from '../components/TagChip.vue'
 import taplaneDescription from '../data/taplane.md?raw'
 import gambitVenturesDescription from '../data/gambit-ventures.md?raw'
 import codeninjaDescription from '../data/codeninja.md?raw'
-
-const taplaneIcon = 'src/assets/company_logos/taplane.jpeg'
-const codeninjaIcon = 'src/assets/company_logos/codeninjas.png'
+import taplaneIcon from '../assets/company_logos/taplane.jpeg'
+import codeninjaIcon from '../assets/company_logos/codeninjas.png'
 
 const timeline = ref([
     {
