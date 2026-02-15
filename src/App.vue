@@ -15,7 +15,7 @@ const items = [
   { title: 'Volunteering', to: { name: 'volunteering' }, icon: 'mdi-account-hard-hat-outline' },
   // { title: 'Resume', to: { name: 'resume' }, icon: 'mdi-file-outline' },
   // { title: 'About', to: { name: 'about' }, icon: 'mdi-account-circle-outline' },
-  // { title: 'Contact', to: { name: 'contact' }, icon: 'mdi-email-outline' },
+  { title: 'Contact', to: { name: 'contact' }, icon: 'mdi-email-outline' },
 ]
 
 const socialLinks = [
