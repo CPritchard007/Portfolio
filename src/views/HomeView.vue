@@ -50,6 +50,52 @@ const { mdAndUp } = useDisplay()
       </v-col>
     </v-row>
   </v-container>
+
+  <v-container>
+    <h2 class="text-h4 mb-4">More About Me</h2>    
+      
+      <v-row class="mb-4">
+        <v-col cols="2" md="4" class="align-self-start">
+          <v-img src="src/assets/photos/pinball.JPG" width="100%" height="100%" rounded="sm" />
+        </v-col>
+        <v-col cols="10" md="8">
+          <h3 class="mb-2">
+            Pinball is my favorite way to unplug
+          </h3>
+          <p class="lead">
+            When I'm away from the keyboard, I'm usually hunting down a pinball machine.
+            I like the mix of quick reactions, strategy, and a little bit of chaos, and I'm always up for chasing one more multiball.
+            It is loud, fast, and a little ridiculous in the best way, which is probably why I enjoy it so much.
+          </p>
+        </v-col>
+      </v-row>
+
+      <v-row class="mb-4">
+        <v-col cols="12">
+          <h3 class="mb-2">
+            Programming has been a constant for me, and I love helping other people get into it too
+          </h3>
+          <p class="lead" style="max-width: unset;">
+            I have been curious about computers for as long as I can remember, long before I knew how to write code.
+            I used to spend hours pulling apart video game files just to see how they worked, and that curiosity eventually led me to my first language: Lua.
+            Since then, I have enjoyed sharing what I learn and helping other people feel more at home with programming.
+            That is a big part of why I joined <RouterLink to="/work-experience" class="text-primary">Code Ninjas</RouterLink> after college. It gave me the chance to teach, mentor, and help students grow, and I still look for opportunities to do more of that whenever I can.
+          </p>
+        </v-col>
+      </v-row>
+
+      <v-row class="mb-4">
+        <v-col cols="12">
+          <h3 class="mb-2">
+            Future collector of retro consoles
+          </h3>
+          <p class="lead" style="max-width: unset;">
+            I hope to, in the future, collect all console generations. How these old consoles work have always been fascinating to me, and I hope to one day have a collection of my own.
+          </p>
+        </v-col>
+      </v-row>
+
+  </v-container>
 </template>
 
 <style lang="scss" scoped>

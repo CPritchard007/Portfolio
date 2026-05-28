@@ -38,14 +38,22 @@ function goHome() {
 }
 
 onMounted(() => {
-  console.log(`%cThank you for visiting my portfolio, I hope you enjoy your stay.`, 'color: #4b4ae6; font-weight: semibold; font-size: 1.2em;')
-  console.log(`
-It has truly been an incredible journey so far, and I’m sincerely grateful to everyone who has supported me along the way.
-I look forward to continuing my work in the software development industry, helping others grow, and becoming the best versions of themselves.
-
-You will find that I have placed many different easter eggs throughout the portfolio, it serves as a small insentive to looking through my project. If you have any critiques or just want to say hello, feel free to reach out to me.
-  `)
-  console.log(`%c+1 (519) 903-4121\ncpritchard649@gmail.com`, 'color: #4b4ae6; font-weight: semibold; font-size: 1.2em;')
+  console.log(
+    '%cCurtis Pritchard\n',
+    'color: indianred; font-size: 16px;\n',
+    'Mobile & Web Developer\n',
+    'color: blue; font-size: 16px;\n',
+    '• Located in: Windsor, ON, Canada\n',
+    '• Email: cpritchard649@gmail.com\n',
+    '• Phone: +1 (519) 903-4121\n',
+    '• LinkedIn: https://www.linkedin.com/in/curtis-pritchard/\n',
+    '• GitHub: https://github.com/cpritchard007\n',
+    '• Website: https://cpritchard007.github.io/\n',
+    '• Blog: https://cpritchard007.github.io/blog/\n',
+    '• Portfolio: https://cpritchard007.github.io/\n\n',
+  )
+  console.log('Thank you for visiting my portfolio! I will be in touch soon.')
+  
 })
 </script>
 
