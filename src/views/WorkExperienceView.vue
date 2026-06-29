@@ -15,7 +15,7 @@ const timeline = ref([
     {
         id: 1,
         icon: taplaneIcon,
-        title: 'Software & Mobile Developer',
+        title: 'Software & mobile developer',
         description: taplaneDescription,
         location: 'Taplane Inc.',
         startDate: '2021',
@@ -51,7 +51,7 @@ const timeline = ref([
     },
     {
         id: 2,
-        title: 'Front-End Developer',
+        title: 'Front-end developer',
         description: gambitVenturesDescription,
         location: 'Gambit Ventures Ltd.',
         startDate: '2020',
@@ -76,7 +76,7 @@ const timeline = ref([
     {
         id: 3,
         icon: codeninjaIcon,
-        title: 'Coding Sensei - Student Coding Mentor',
+        title: 'Coding Sensei - student coding mentor',
         description: codeninjaDescription,
         location: 'Code Ninja',
         startDate: '2020',
@@ -109,7 +109,7 @@ const timeline = ref([
 
 <template>
     <v-container class="page">
-        <div class="kicker">Work Experience</div>
+        <div class="kicker">Work experience</div>
 
         <div v-if="smAndDown" class="mobile-list">
             <v-card v-for="item in timeline" :key="item.id" class="mb-4 mobile-item" elevation="0" rounded="lg">

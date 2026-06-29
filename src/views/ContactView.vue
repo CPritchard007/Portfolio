@@ -36,10 +36,10 @@ onBeforeUnmount(() => {
 
 <template>
   <v-container class="page">
-    <div class="kicker">Contact Me</div>
+    <div class="kicker">Contact me</div>
     
     <v-card class="contact-card mt-6" rounded="xl" elevation="0">
-      <v-card-title>Contact Information</v-card-title>
+      <v-card-title>Contact information</v-card-title>
       <v-card-subtitle>
         Interested in working together? Do you have a questions? please feel free to reach out.
       </v-card-subtitle>

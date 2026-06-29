@@ -23,7 +23,7 @@ function viewCompanyProjects() {
 
     <div v-if="projects.length === 0">
       <p class=" text-center">No personal projects listed yet, but more are on the way!
-        <button class="text-primary" @click="viewCompanyProjects">View Work Projects</button>
+        <button class="text-primary" @click="viewCompanyProjects">View work projects</button>
       </p>
     </div>
     <v-row dense>

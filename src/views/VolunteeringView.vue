@@ -17,7 +17,7 @@ const volunteering = [
                 description: firstrobotics_4838,
                 actions: [
                     {
-                        text: 'Github',
+                        text: 'GitHub',
                         icon: 'mdi-github',
                         href: 'https://github.com/riverrouge4838',
                     },
@@ -41,9 +41,9 @@ const volunteering = [
         <template v-for="(item) in volunteering" :key="volunteering.id">
         <h2 class="mb-3">{{ item.name }}</h2>
             <v-row dense>
-                <v-col v-for="(child, index) in item.children" :key="index" cols="12" md="4" class="px-3">
+                <v-col v-for="(child, index) in item.children" :key="index" cols="12" md="6" class="px-3">
                     <v-card class="h-100">
-                        <v-img v-if="child.image" :src="child.image" width="100%"  max-height="180px" cover />
+                        <v-img v-if="child.image" :src="child.image" width="100%"  max-height="240px" cover />
                         <div v-else class="no-image"></div>
                         <v-card-title class="text-center">{{child.name}}</v-card-title>
                         <v-card-subtitle class="text-secondary font-weight-bold">{{ child.dates }}</v-card-subtitle>
@@ -79,7 +79,7 @@ const volunteering = [
 }
 
 .no-image {
-    height: 180px;
+    height: 240px;
     background-color: color-mix(in srgb, black 20%, transparent);
 }
 </style>

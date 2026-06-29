@@ -52,17 +52,14 @@ const { mdAndUp } = useDisplay()
   </v-container>
 
   <v-container>
-    <h2 class="text-h4 mb-4">More About Me</h2>    
+    <h2 class="text-h4 mb-4">More about me</h2>
       
       <v-row class="mb-4">
-        <v-col cols="2" md="4" class="align-self-start">
-          <v-img src="src/assets/photos/pinball.JPG" width="100%" height="100%" rounded="sm" />
-        </v-col>
-        <v-col cols="10" md="8">
+        <v-col cols="12">
           <h3 class="mb-2">
             Pinball is my favorite way to unplug
           </h3>
-          <p class="lead">
+          <p class="lead" style="max-width: unset;">
             When I'm away from the keyboard, I'm usually hunting down a pinball machine.
             I like the mix of quick reactions, strategy, and a little bit of chaos, and I'm always up for chasing one more multiball.
             It is loud, fast, and a little ridiculous in the best way, which is probably why I enjoy it so much.
@@ -90,7 +87,7 @@ const { mdAndUp } = useDisplay()
             Future collector of retro consoles
           </h3>
           <p class="lead" style="max-width: unset;">
-            I hope to, in the future, collect all console generations. How these old consoles work have always been fascinating to me, and I hope to one day have a collection of my own.
+            One of my long-term goals is to build a collection that spans every console generation. I have always been fascinated by how these older systems work, and I would love to have a collection of my own someday.
           </p>
         </v-col>
       </v-row>
